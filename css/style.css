@@ -1,0 +1,417 @@
+@font-face {
+  font-family: 'Sant Elia';
+  src: url("../fonts/SantEliaScriptBoldDEMO.otf"); }
+* {
+  font-family: Lato; }
+
+.header-slider {
+  position: relative;
+  margin-bottom: 55px; }
+  .header-slider img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover; }
+
+.header-slide-item {
+  padding-top: 50px;
+  background-image: url("../img/header-slider_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-height: 600px;
+  transition: .5s; }
+
+.content {
+  margin: auto;
+  width: 83.33%; }
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 160px; }
+  .main-header nav ul {
+    display: flex; }
+    .main-header nav ul li {
+      margin-left: 17px; }
+
+/*menu*/
+.menu {
+  display: none;
+  cursor: pointer;
+  padding-left: 1.25em;
+  position: relative;
+  width: 25px;
+  height: 25px; }
+
+.menu-global {
+  backface-visibility: hidden;
+  position: absolute;
+  left: 0;
+  border-top: 5px solid white;
+  width: 100%;
+  transition: 0.55s; }
+
+.menu-top {
+  top: 0; }
+
+.menu-middle {
+  top: 15px; }
+
+.menu-bottom {
+  top: 31px; }
+
+.menu-top-click {
+  backface-visibility: hidden;
+  top: 15px;
+  transform: rotate(50deg);
+  transition: 0.55s 0.5s; }
+
+.menu-middle-click {
+  opacity: 0; }
+
+.menu-bottom-click {
+  backface-visibility: hidden;
+  top: 15px;
+  transform: rotate(-410deg);
+  transition: 0.55s 0.5s; }
+
+.header-title {
+  text-align: center;
+  color: #e9e5db;
+  padding-bottom: 230px; }
+  .header-title h1 {
+    font-family: "Sant Elia";
+    font-size: 72px;
+    font-weight: 400;
+    margin-bottom: 30px; }
+  .header-title h2 {
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; }
+
+.header-item {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 110px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between; }
+
+.sliderBtn {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: transparent;
+  cursor: pointer; }
+
+.header-item__active {
+  background-color: #fff !important; }
+
+.jorney {
+  max-width: 57%;
+  margin: 0px auto;
+  padding: 0px 20px;
+  text-align: center;
+  margin-bottom: 61px; }
+  .jorney .icons-header {
+    margin-bottom: 30px; }
+  .jorney p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.9px;
+    color: #94928d; }
+
+.icons-header {
+  color: #5e5b54;
+  text-align: center; }
+  .icons-header img {
+    margin-bottom: 30px; }
+  .icons-header h3 {
+    color: #3c3930;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4.8px; }
+
+.slick-dots {
+  margin: 10px 0;
+  padding: 0;
+  text-align: center; }
+
+.slick-dots li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  opacity: .5;
+  transition: all .2s ease;
+  margin: 0 5px;
+  border-radius: 50%; }
+
+.slick-dots .slick-active {
+  opacity: 1; }
+
+.quote-block {
+  margin-bottom: 50px;
+  padding: 130px 0px 120px;
+  background-image: url("../img/qu.png");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; }
+  .quote-block q {
+    display: block;
+    width: 43%;
+    margin: 0px auto;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Sant Elia";
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2.25px; }
+
+.portfolio {
+  margin-bottom: 55px; }
+  .portfolio .icons-header {
+    margin-bottom: 60px; }
+  .portfolio .portfolio-gallary-top, .portfolio .portfolio-gallary-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .portfolio .portfolio-nav {
+    display: flex;
+    justify-content: space-between; }
+    .portfolio .portfolio-nav .nav-item span {
+      color: #61605f;
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 3.6px; }
+  .portfolio .prev img {
+    margin-right: 15px; }
+  .portfolio .next img {
+    margin-left: 15px; }
+
+.portfolio-gallary-landscape {
+  margin: 7px 0; }
+  .portfolio-gallary-landscape .portfolio-gallary-landscape__item {
+    max-width: 1000px;
+    margin: auto;
+    position: relative; }
+  .portfolio-gallary-landscape img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    object-fit: cover; }
+
+.portfolio-gallary-landscape_links {
+  position: absolute;
+  margin: auto;
+  top: 20px;
+  left: 10%;
+  color: #fff; }
+  .portfolio-gallary-landscape_links h4 {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2.8px; }
+  .portfolio-gallary-landscape_links ul {
+    float: left; }
+    .portfolio-gallary-landscape_links ul li {
+      margin-bottom: 20px; }
+      .portfolio-gallary-landscape_links ul li a {
+        color: #fff;
+        font-size: 20px; }
+
+.portfolio-gallary {
+  text-align: center;
+  width: 100%;
+  margin: 0px auto 25px; }
+
+.portfolio-gallary-top-item {
+  margin: 7px; }
+
+.feedback {
+  margin-bottom: 50px; }
+  .feedback .icons-header {
+    margin-bottom: 25px; }
+  .feedback ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .feedback ul li {
+      padding: 25px; }
+
+.footer {
+  background-image: url("../img/footer-background.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .footer h3 {
+    padding-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4.8px; }
+  .footer .message {
+    width: calc(100% - 20px);
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 160px;
+    border: none;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.6);
+    color: #3c3930;
+    letter-spacing: 3.2px; }
+  .footer .footer-wrap {
+    margin-bottom: 60px; }
+  .footer .footer-btn {
+    display: flex;
+    justify-content: center; }
+    .footer .footer-btn button {
+      border: 1px solid #fff;
+      background: transparent;
+      padding: 21px 143px;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 4.8px; }
+
+.footer-feedBack {
+  margin-bottom: 35px; }
+
+.footer-feedBack__input {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 45px; }
+  .footer-feedBack__input input {
+    width: 437px;
+    border: none;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    color: #3c3930;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3.2px; }
+  @media screen and (max-width: 1150px) {
+    .footer-feedBack__input input {
+      width: 100%;
+      margin-bottom: 20px; } }
+
+.copiright hr {
+  width: 57%;
+  height: 2px;
+  background: #949696;
+  border: none;
+  margin-bottom: 10px; }
+.copiright span {
+  padding-bottom: 35px;
+  display: block;
+  text-align: center;
+  color: #747776;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1.05px; }
+
+@media screen and (max-width: 900px) {
+  .portfolio-gallary-landscape_links {
+    display: flex;
+    align-items: center; }
+    .portfolio-gallary-landscape_links h4 {
+      margin-bottom: 0; }
+    .portfolio-gallary-landscape_links ul {
+      margin-left: 20px;
+      display: flex; }
+      .portfolio-gallary-landscape_links ul li {
+        margin-bottom: 0px;
+        margin-right: 20px; } }
+@media screen and (max-width: 570px) {
+  .content {
+    width: 95%; }
+
+  .menu {
+    display: block; }
+
+  .main-header {
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 160px;
+    position: relative; }
+    .main-header nav ul {
+      position: absolute;
+      z-index: 999;
+      top: 85px;
+      left: -999px;
+      padding-right: 14%;
+      padding-left: 20px;
+      background: #000;
+      opacity: .7;
+      display: flex;
+      flex-direction: column;
+      transition: .9s; }
+      .main-header nav ul li {
+        margin: 15px 0; }
+
+  .header-title h1 {
+    font-size: 55px; }
+  .header-title h2 {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; }
+
+  .portfolio-nav {
+    display: flex;
+    justify-content: space-between; }
+    .portfolio-nav .nav-item span {
+      display: none; }
+
+  .jorney {
+    max-width: 80%;
+    margin: 0px auto;
+    padding: 0px 20px;
+    text-align: center;
+    margin-bottom: 61px; }
+
+  .quote-block {
+    margin-bottom: 50px;
+    padding: 130px 0px 120px;
+    background-image: url("../img/qu.png");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; }
+    .quote-block q {
+      display: block;
+      width: 85%;
+      margin: 0px auto;
+      text-align: center;
+      color: #ffffff;
+      font-family: "Sant Elia";
+      font-size: 30px;
+      font-weight: 400;
+      letter-spacing: 2.25px; }
+
+  .footer-btn button {
+    padding: 21px 70px !important; } }
+@media screen and (max-width: 400px) {
+  .header-title h1 {
+    font-size: 40px; }
+  .header-title h2 {
+    font-size: 20px; }
+
+  .footer-btn button {
+    padding: 18px 50px !important; } }
+
+/*# sourceMappingURL=style.css.map */
